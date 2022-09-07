@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <section>
+            <h1>Hola {{nombre}} {{apellido}}</h1> <!-- para pasarle variables al html-->
+        </section>
+
+        <section>
+            {%for n in lista%}
+            {{n}}
+            <br>
+            {%endfor%} <!--para motrar una lista mandada desde python-->
+        </section>
+
+        <section>
+            <div class="margin">
+                <h2>Margen</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="padding">
+                <h2>Rellenito</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="border">
+                <h2>Borde</h2>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
